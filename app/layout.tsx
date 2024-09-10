@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster";
+import Providers from "./providers";
  
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -24,8 +25,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable)}>{children}
-          <Toaster/></body>
+          fontSans.variable)}>
+            <Providers>
+                {children}
+              <Toaster/>
+            </Providers>
+      </body>
     </html>
   );
 }

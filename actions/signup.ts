@@ -36,7 +36,7 @@ export async function signup({name,email,password}:SignupUser){
                     data:{
                         name,
                         email,
-                        password,
+                        password:hashedPassword,
                         verificationCode:otp,
                         verificationCodeExpiry:(Date.now()+3600000)
                     }

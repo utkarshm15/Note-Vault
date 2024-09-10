@@ -2,7 +2,7 @@ import Link from "next/link";
 
 
 export default function Home() {
-  return <div className="bg-gradient-to-r from-slate-900 via-slate-600 to-slate-950 h-screen ">
+  return <div className="bg-gradient-to-r from-slate-900 via-gray-700 to-slate-950 h-screen ">
     <div className="flex justify-between px-4 text-lg py-1">
       <div className="w-fit cursor-pointer text-slate-400 hover:text-white">NoteVault</div>
       <div className="flex gap-4">
